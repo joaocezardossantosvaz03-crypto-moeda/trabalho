@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parecer Ético - Vazamento de Dados de Clientes</title>
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --text-color: #f8fafc;
+      --accent-color: #38bdf8;
+      --border-color: #334155;
+      --subtext-color: #94a3b8;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+      border-bottom: 1px solid var(--border-color);
+      padding: 2.5rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: var(--accent-color);
+      font-size: 2rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      color: var(--subtext-color);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      color: var(--accent-color);
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 0.4rem;
+      margin-top: 0;
+    }
+
+    ul, ol {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .members-list {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+    }
+
+    .members-list li {
+      background: #334155;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--subtext-color);
+      border-top: 1px solid var(--border-color);
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Comitê de Ética em Tecnologia</h1>
+    <p>Parecer Ético sobre Vazamento de Dados de Clientes</p>
+  </header>
+
+  <div class="container">
+
+    <!-- Integrantes -->
+    <div class="card">
+      <h2>Integrantes do Comitê</h2>
+      <ul class="members-list">
+        <li>João</li>
+        <li>Nicolas</li>
+        <li>Borelli</li>
+      </ul>
+    </div>
+
+    <!-- 1. Descrição do Caso -->
+    <div class="card">
+      <h2>1. Descrição do Caso e das Partes Envolvidas</h2>
+      <p><strong>Descrição do Caso:</strong> Uma falha de segurança no banco de dados de uma empresa de tecnologia fictícia expôs publicamente dados pessoais e cadastrais de mais de 50.000 clientes (nomes, CPFs, e-mails e histórico de compras). O incidente foi descoberto pela equipe interna após tentativa de chantagem por um agente externo.</p>
+      <p><strong>Partes Envolvidas:</strong></p>
+      <ul>
+        <li><strong>Clientes da Empresa:</strong> Tiveram sua privacidade violada e correm risco de fraudes.</li>
+        <li><strong>Comitê Executivo e Equipe de TI:</strong> Responsáveis pela segurança da informação e pela resposta ao incidente.</li>
+        <li><strong>Autoridade Nacional de Proteção de Dados (ANPD):</strong> Órgão fiscalizador e regulador.</li>
+      </ul>
+    </div>
+
+    <!-- 2. Dilema Ético -->
+    <div class="card">
+      <h2>2. Dilema Ético</h2>
+      <p>O conflito principal reside entre o <strong>dever de transparência imediata com os clientes e autoridades</strong> contra a <strong>tentativa de conter os danos à reputação da empresa e ocultar a gravidade da falha</strong> antes da investigação completa.</p>
+    </div>
+
+    <!-- 3. Leis Aplicáveis -->
+    <div class="card">
+      <h2>3. Leis Aplicáveis</h2>
+      <ul>
+        <li><strong>LGPD (Lei nº 13.709/2018):</strong> Violação dos princípios da segurança, prevenção e transparência (Art. 6º). Obrigatoriedade de comunicação do incidente à ANPD e aos titulares em prazo razoável (Art. 48).</li>
+        <li><strong>Marco Civil da Internet (Lei nº 12.965/2014):</strong> Art. 7º, que garante a não disponibilização a terceiros de dados pessoais sem consentimento livre, expresso e informado.</li>
+        <li><strong>Lei Carolina Dieckmann (Lei nº 12.737/2012):</strong> Tipifica a invasão de dispositivo informático alheio.</li>
+      </ul>
+    </div>
+
+    <!-- 4. Código de Ética de Referência -->
+    <div class="card">
+      <h2>4. Código de Ética de Referência</h2>
+      <p><strong>Código de Ética da SBC (Sociedade Brasileira de Computação):</strong></p>
+      <ul>
+        <li>Garantir a privacidade e a proteção dos dados pessoais dos cidadãos.</li>
+        <li>Atuar com honestidade, transparência e responsabilidade profissional frente a falhas operacionais ou sistêmicas.</li>
+      </ul>
+    </div>
+
+    <!-- 5. Passos de Tomada de Decisão Ética -->
+    <div class="card">
+      <h2>5. Passos de Tomada de Decisão Ética</h2>
+      <ol>
+        <li><strong>Identificação:</strong> Avaliação técnica da extensão da falha e verificação dos dados expostos.</li>
+        <li><strong>Levantamento de Alternativas:</strong>
+          <ul>
+            <li><em>Opção A:</em> Ocultar o vazamento para evitar pânico e perda de clientes.</li>
+            <li><em>Opção B:</em> Notificar internamente, corrigir a falha e informar apenas os clientes afetados de forma discreta.</li>
+            <li><em>Opção C:</em> Emitir comunicado oficial transparente à ANPD e a todos os afetados, oferecendo suporte contra fraudes.</li>
+          </ul>
+        </li>
+        <li><strong>Avaliação de Consequências:</strong> A Opção A viola a lei e destrói a confiança futura. A Opção C gera impacto inicial na reputação, mas cumpre as exigências legais e éticas.</li>
+        <li><strong>Decisão:</strong> Adoção imediata da Opção C.</li>
+      </ol>
+    </div>
+
+    <!-- 6. Decisão Final e Justificativa -->
+    <div class="card">
+      <h2>6. Decisão Final do Grupo e Justificativa</h2>
+      <p><strong>Decisão:</strong> Corrigir imediatamente a vulnerabilidade, notificar formalmente a ANPD e comunicar publicamente todos os clientes afetados em até 48 horas, oferecendo serviço gratuito de monitoramento de crédito/CPF por 12 meses.</p>
+      <p><strong>Justificativa:</strong> A transparência e o respeito à privacidade dos usuários estão acima da preservação de imagem de curto prazo da empresa, atendendo integralmente à LGPD e ao Código de Ética da SBC.</p>
+    </div>
+
+    <!-- 7. Como Evitar Futuros Problemas -->
+    <div class="card">
+      <h2>7. Como Evitar que o Problema Aconteça de Novo</h2>
+      <ul>
+        <li>Implementar criptografia ponta a ponta para dados sensíveis em repouso e em trânsito.</li>
+        <li>Realizar testes periódicos de intrusão (Pentests) e auditorias de segurança.</li>
+        <li>Adotar treinamento contínuo de conscientização em segurança da informação para toda a equipe.</li>
+        <li>Aplicar a política de privilégio mínimo no acesso aos bancos de dados.</li>
+      </ul>
+    </div>
+
+    <!-- Referências -->
+    <div class="card">
+      <h2>Referências Consultadas</h2>
+      <ul>
+        <li>BRASIL. Lei nº 13.709, de 14 de agosto de 2018. Lei Geral de Proteção de Dados Pessoais (LGPD).</li>
+        <li>BRASIL. Lei nº 12.965, de 23 de abril de 2014. Marco Civil da Internet.</li>
+        <li>SOCIEDADE BRASILEIRA DE COMPUTAÇÃO (SBC). Código de Ética da SBC.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Trabalho Acadêmico de Ética e Legislação | Grupo: João, Nicolas e Borelli</p>
+  </footer>
+
+</body>
+</html>
